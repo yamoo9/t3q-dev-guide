@@ -1,0 +1,31 @@
+body {
+  font: 1rem/1.5 "Nanum Gothic", Helvetica, Arial, sans-serif;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  cursor: pointer;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration: none;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  abbr[title]::after {
+    content: "(" attr(title) ") ";
+  }
+
+  [href]::after {
+    content: "(" attr(href) ") ";
+  }
+}

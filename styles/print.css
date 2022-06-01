@@ -1,0 +1,14 @@
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  abbr[title]::after {
+    content: "(" attr(title) ") ";
+  }
+
+  [href]::after {
+    content: "(" attr(href) ") ";
+  }
+}
